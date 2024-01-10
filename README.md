@@ -1,6 +1,8 @@
 # Vehicle and License Plate Recognition
 This software implements the Deep Learning based Vehicle and Persian License Plate Detection and OCR in opencv using Python and C++.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mjavadpur/VLPR/blob/main/quick_demo.ipynb)
+
 ## Reference
 - [YOLOv3 multi-type vehicles Detecting](https://github.com/wsh122333/Multi-type_vehicles_flow_statistics)
 - [SORT algorithm for tracking](https://github.com/abewley/sort)
