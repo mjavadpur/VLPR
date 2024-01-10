@@ -1,0 +1,9 @@
+__pycache__
+.DS_Store
+.vscode
+.idea
+/IO/input/*.mp4
+/IO/output
+/cpp/build
+/models
+*.pro.user*

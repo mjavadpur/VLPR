@@ -1,0 +1,7 @@
+cython
+sortedcontainers
+numba
+matplotlib
+scikit-image
+scipy
+filterpy
