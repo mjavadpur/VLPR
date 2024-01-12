@@ -72,7 +72,7 @@ def main(input_path, output_path, save, gpu, show):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Car and License Plate Recognition')
-    parser.add_argument('-i', '--input', help="input image or video path", default="IO/input/C0003.mp4", type=str)
+    parser.add_argument('-i', '--input', help="input image or video path", default="IO/input/01.mp4", type=str)
     parser.add_argument('-o', '--output', help="output image or video path", default="IO/output", type=str)
     parser.add_argument("-s", "--save", help="whether to save", default=True, action="store_true")
     parser.add_argument('--gpu', action="store_true", default=False, help='Use gpu inference')
