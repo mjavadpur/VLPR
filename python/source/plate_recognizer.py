@@ -33,6 +33,7 @@ class PlateRecognizer:
             confidence = np.mean(values[preds_idx])
 
             # decode the result into text
+            print(result.shape)
             text = self.decodeText(result)
 
             # find char index in text
@@ -55,6 +56,7 @@ class PlateRecognizer:
             else:
                 text += '-'
 
+        print(f"----text-----{text}")
         # adjacent same letters as well as background text must be removed to get the final output
         char_list = []
         for i in range(len(text)):

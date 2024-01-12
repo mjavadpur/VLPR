@@ -12,6 +12,11 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 def main():
+    
+    # Get the current working directory
+    working_directory = os.getcwd()
+    args.input = os.path.join(working_directory, args.input)
+    
     output_dir_path = os.path.join(args.output, Path(args.input).stem)
     if not os.path.exists(output_dir_path):
         os.makedirs(output_dir_path)
@@ -60,3 +65,26 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     main()
+
+
+'''
+output for IO/input/7.bmp:
+
+
+make: Entering directory '/content/VLPR/python/source/lanms'
+make: 'adaptor.so' is up to date.
+make: Leaving directory '/content/VLPR/python/source/lanms'
+[ WARN:0@0.575] global net_impl.cpp:178 setUpNet DNN module was not built with CUDA backend; switching to CPU
+[ WARN:0@5.986] global net_impl.cpp:178 setUpNet DNN module was not built with CUDA backend; switching to CPU
+None
+OCR process done for plate id -1, confidence: 0.9885082244873047
+23 س 799 - 74
+OCR process done for plate id -1, confidence: 0.9948571920394897
+44 س 559 - 74
+OCR process done for plate id -1, confidence: 0.9435219764709473
+17 ن 652 - 73
+OCR process done for plate id -1, confidence: 0.916962742805481
+47 س 769 - 26
+OCR process done for plate id -1, confidence: 0.9098930358886719
+57 د 954 - 00
+'''
