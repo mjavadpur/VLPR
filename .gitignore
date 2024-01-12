@@ -2,7 +2,5 @@ __pycache__
 .DS_Store
 .vscode
 .idea
-/IO/output
 /cpp/build
-/models
 *.pro.user*

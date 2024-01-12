@@ -1,0 +1,7 @@
+google_drive_urls = {
+    'https://drive.google.com/file/d/19v_tDizNH7omRT5SSC1YDCRAxV3vd4OF/view?usp=drive_link': 'plate_detector.pb',
+    'https://drive.google.com/file/d/13AEbinjer9dmqYsGNO5BdhtiuUNg0rvV/view?usp=drive_link': 'plate_recognizer.onnx',
+    'https://drive.google.com/file/d/1AKpHKt9UERKwAsK8t9kMrALqfWwu3MH_/view?usp=drive_link': 'yolov3.cfg',
+    'https://drive.google.com/file/d/18fpLr4SAlfkpr0eoAFeeyB_6vaEGwhyH/view?usp=drive_link': 'yolov3.weigths',
+    # Add more URLs or IDs as needed
+}
