@@ -7,7 +7,7 @@ using namespace std;
 
 PlateDetector::PlateDetector()
 {
-    net = cv::dnn::readNet("models/plate_detector.pb");
+    net = cv::dnn::readNet("/content/VLPR/models/plate_detector.pb");
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
 

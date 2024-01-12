@@ -7,7 +7,7 @@ class PlateRecognizer:
     alphabet = "#0123456789ABCDEFGHIJKLMNPQRSTUVWXYZ"
 
     def __init__(self):
-        self.net = cv2.dnn.readNet("models/plate_recognizer.onnx")
+        self.net = cv2.dnn.readNet("/content/VLPR/models/plate_recognizer.onnx")
         self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 

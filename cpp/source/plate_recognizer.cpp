@@ -7,7 +7,7 @@ using namespace std;
 
 PlateRecognizer::PlateRecognizer() 
 {
-    net = cv::dnn::readNet("models/plate_recognizer.onnx");
+    net = cv::dnn::readNet("/content/VLPR/models/plate_recognizer.onnx");
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
 

@@ -13,7 +13,7 @@ from .vehicle import Vehicle
 
 class VehicleDetector:
     def __init__(self):
-        self.net = cv2.dnn.readNetFromDarknet("models/yolov3.cfg", "models/yolov3.weights")
+        self.net = cv2.dnn.readNetFromDarknet("/content/VLPR/models/yolov3.cfg", "models/yolov3.weights")
         self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 

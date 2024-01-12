@@ -14,7 +14,7 @@ from .plate import Plate
 
 class PlateDetector:
     def __init__(self):
-        self.net = cv2.dnn.readNet("models/plate_detector.pb")
+        self.net = cv2.dnn.readNet("/content/VLPR/models/plate_detector.pb")
         self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
         self.outNames = ["feature_fusion/Conv_7/Sigmoid", "feature_fusion/concat_3"]

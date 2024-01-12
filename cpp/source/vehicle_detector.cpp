@@ -7,7 +7,7 @@ using namespace std;
 
 VehicleDetector::VehicleDetector()
 {
-    net = cv::dnn::readNet("models/yolov3.weights", "models/yolov3.cfg");
+    net = cv::dnn::readNet("models/yolov3.weights", "/content/VLPR/models/yolov3.cfg");
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
 

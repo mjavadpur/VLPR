@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     int resize_w = 1280, resize_h = 960;
     cv::resize(image, image, cv::Size(1280, 960));
 
-    cv::dnn::Net net = cv::dnn::readNet("models/plate_detector.pb");
+    cv::dnn::Net net = cv::dnn::readNet("/content/VLPR/models/plate_detector.pb");
     net.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
 
